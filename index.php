@@ -1,8 +1,9 @@
 <?php
-	session_start();
+	session_start();	
+?>
+<?php
 
-	$loggedin=$_SESSION['loggedin']
-
+	$loggedin=$_SESSION['loggedin'];
 	$section=$_GET[ 'section' ];
 
 	include("content/database.php");
@@ -40,7 +41,11 @@
 		// TODO: Write profile page
 	}
 	
-	include("content/footer.php")M
+	else {
+		header('Location: index.php?section=fresh');
+	}
+	
+	include("content/footer.php")
 
 ?>
 
