@@ -14,8 +14,8 @@
 	  <meta http-equiv="cache-control" content="no-cache">
 	  <meta http-equiv="pragma" content="no-cache">
 	  <?php
-	  	if($section=""){
-	  		// Redirect to fresh section
+	  	if(!$section){
+	  		// Redirect to fresh section if there isn't any section provided.
 			echo ("<meta http-equiv=\"refresh\" content=\"0; url=index.php?section=fresh\"");
 	  	}
 	  ?>
@@ -37,6 +37,7 @@
 			if($loggedin=true){
 			?>
 			<li><a href="index.php?section=profile">Me</a></li>
+			<li><a href="index.php?section=post">Post</a></li>
 			<?php
 			}
 			else {
