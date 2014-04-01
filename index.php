@@ -18,7 +18,7 @@
 	  <?php
 	  	if($section==""){
 	  		// Redirect to fresh section
-			echo ("<meta http-equiv=\"refresh\" content=\"0; url=index.php?section=fresh\"");
+			echo ("<meta http-equiv=\"refresh\" content=\"0; url=index.php?section=fresh\">");
 	  	}
 	  ?>
 	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
