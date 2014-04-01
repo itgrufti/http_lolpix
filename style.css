@@ -1,0 +1,121 @@
+body {
+	     color: black; background-color: white;
+	     font-size: 100.01%;
+	     font-family: Helvetica,Arial,sans-serif;
+	     margin: 0; padding: 1em;
+	    }
+	
+	    div#banner {
+	     font-size: 0.91em;
+	     float: center;
+	     margin: 0; padding: 0;
+	     border: 1px dashed #989898;
+	     background-image:url(img/mnbck.png);
+	    }
+
+		div#spotitrack {
+		 text-align: center;
+		 font-size: 0.91em;
+		 float: right; width: 301px;
+		 margin: 0; padding: 0;
+		 border: 1px dashed silver;	
+		}
+	    
+	    ul#leftbar {
+	     font-size: 0.91em;
+	     float: left; width: 10em;
+	     margin: 0; padding: 0;
+	     border: 1px dashed silver;
+	    }
+	    
+	    ul#leftbar li {
+	      list-style: none;
+	     margin: 0; padding: 0.5em;
+	    }
+    
+	    ul#leftbar a {
+	      display: block;
+	     padding: 0.2em;
+	     font-weight: bold;
+	    }
+	    
+	    ul#leftbar a:link {
+	      color: black; background-color: #eee;
+	    }
+	    
+	    ul#leftbar a:visited {
+	      color: #666; background-color: #eee;
+	    }
+	    
+	    ul#leftbar a:hover {
+	     color: black; background-color: #008DFF;
+	    }
+	    
+	    ul#leftbar a:active {
+	      color: white; background-color: gray;
+	    }
+
+		div#post {
+			text-align: right;	
+		}
+	
+		div#feed {
+			text-align: center;
+			float: right;	
+		}
+
+	    div#main {
+	      text-align: center;
+	      margin-left: 10em;
+	      margin-top:1em;
+	      padding: 0 1em;
+	      border: 1px dashed silver;
+	      min-width: 16em; /* Mindestbreite (der Überschrift) verhindert Anzeigefehler in modernen Browsern */
+	    }
+    
+	    div#main h1 {
+	      font-size: 1.5em;
+	      margin: 0 0 1em;
+	    }
+	    
+	    div#main h2 {
+	      font-size: 1.2em;
+	      margin: 0 0 1em;
+	    }
+    
+	    div#main p {
+	      font-size:1em;
+	      margin: 1em 0;
+	    }
+	    div#blob {
+		  text-align:center;
+		  padding:0 1em;
+		  border:1px dashed silver;
+		  background:#E6E6E6;
+		  margin-top:1em;
+		}
+	    div#red {
+	      color: red;
+	      font-size: 150%;
+	      font-family: Helvetica,Arial,sans-serif;
+	    }
+		div#sent {
+			background-color: #FAFAFA	;
+			border: 1px #F2F2F2;
+			text-align: center;
+		}
+		  a {
+			  color: #808080;
+		  }
+		  a:visited {
+			  color: #808080;
+		  }
+		  a:active {
+			  color: #808080;
+		  }
+		  a:hover {
+			  color: #808080;
+		  }
+	  .auto-style1 {
+		  text-decoration: underline;
+	  }
