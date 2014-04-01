@@ -1,5 +1,6 @@
 <?php
 	$section=$_GET[ 'section' ];
+	include("content/database.php");
 ?>
 <html>
 	<head>
@@ -32,6 +33,18 @@
 		<ul id="leftbar">
 			<li><a href="index.php?section=fresh">Fresh</a></li>
 			<li><a href="index.php?section=doge">Doge</a></li>
+			<?php
+			if($loggedin=true){
+			?>
+			<li><a href="index.php?section=profile">Me</a></li>
+			<?php
+			}
+			else {
+			?>
+			<li><a href="index.php?section=login">Login</a></li>
+			<?php
+			}
+			?>
 			<li><a href="index.php?section=about">About</a></li>
 		</ul>
 		<!-- main content -->
@@ -42,10 +55,10 @@
 			  		// TODO: Set up database connection.
 			  		// TODO: Sort images by id descending. 
 				}
-				else if($section="doge"){
+				elseif($section="doge"){
 			  		// TODO: Sort images by Doge
 				}
-				else if($section="about"){
+				elseif($section="about"){
 					// TODO: Write about
 				}
 			?>
