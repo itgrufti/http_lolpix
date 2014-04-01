@@ -24,6 +24,22 @@
 		// TODO: Write about
 	}
 	
+	elseif($section="login"){
+		include("content/login.php");
+	}
+	
+	elseif($section="forgot"){
+		// TODO: Write forgot password
+	}
+	
+	elseif($section="register"){
+		// TODO: Write registration
+	}
+	
+	elseif($section="profile"){
+		// TODO: Write profile page
+	}
+	
 	include("content/footer.php")M
 
 ?>
