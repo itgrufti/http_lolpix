@@ -1,3 +1,6 @@
+<?php
+	$section=$_GET[ 'section' ];
+?>
 <html>
 	<head>
 	  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -9,6 +12,12 @@
 	  <meta http-equiv="Content-Language" content="de">
 	  <meta http-equiv="cache-control" content="no-cache">
 	  <meta http-equiv="pragma" content="no-cache">
+	  <?php
+	  	if($section=""){
+	  		// Redirect to fresh section
+			echo "<meta http-equiv=\"refresh\" content=\"0; url=index.php?section=fresh\"";
+	  	}
+	  ?>
 	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>lolPix</title>
@@ -28,7 +37,17 @@
 		<!-- main content -->
 		<div id="main">
 			<?php
-			  if
+				// TODO: Set up NSFW
+				if($section="fresh"){
+			  		// TODO: Set up database connection.
+			  		// TODO: Sort images by id descending. 
+				}
+				else if($section="doge"){
+			  		// TODO: Sort images by Doge
+				}
+				else if($section="about"){
+					// TODO: Write about
+				}
 			?>
 		</div>    
 	</body>
