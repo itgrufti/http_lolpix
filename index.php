@@ -1,4 +1,6 @@
 <?php
+	session_start();
+	$loggedin=$_SESSION['loggedin']
 	$section=$_GET[ 'section' ];
 	include("content/database.php");
 ?>
@@ -14,9 +16,9 @@
 	  <meta http-equiv="cache-control" content="no-cache">
 	  <meta http-equiv="pragma" content="no-cache">
 	  <?php
-	  	if(!$section){
-	  		// Redirect to fresh section if there isn't any section provided.
-			echo ("<meta http-equiv=\"refresh\" content=\"0; url=index.php?section=fresh\"");
+	  	if($section==""){
+	  		// Redirect to fresh section
+			echo "<meta http-equiv=\"refresh\" content=\"0; url=index.php?section=fresh\"";
 	  	}
 	  ?>
 	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
@@ -34,10 +36,9 @@
 			<li><a href="index.php?section=fresh">Fresh</a></li>
 			<li><a href="index.php?section=doge">Doge</a></li>
 			<?php
-			if($loggedin=true){
+			if($loggedin=="true"){
 			?>
 			<li><a href="index.php?section=profile">Me</a></li>
-			<li><a href="index.php?section=post">Post</a></li>
 			<?php
 			}
 			else {
